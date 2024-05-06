@@ -21,7 +21,7 @@ const Header = () => {
       }
     };
     getProfileData();
-  }, []);
+  }, [setUser]); // if setUser is meant to remain constant, remove it from the dependency array on this line
 
   const handleLogout = async (e) => {
     e.preventDefault();
@@ -51,7 +51,7 @@ const Header = () => {
         <p>Services</p>
         <p>Products</p>
         {user ?
-          <button onClick={handleLogout} style={{ margin: '20px', padding: '10px 20px', borderRadius: '5px', backgroundColor: 'crimson' }}>LOGOUT</button>
+          <button className='logout-button' onClick={handleLogout}>Logout</button>
           :
           <Link to="/auth">
             <p>Account</p>

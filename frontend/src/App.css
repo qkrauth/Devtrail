@@ -167,7 +167,7 @@ button:hover {
 }
 
 .intro-container span {
-    color: lightseagreen;
+    color: deepskyblue;
 }
 
 .intro-para {
@@ -232,6 +232,15 @@ button:hover {
     padding: 10px;
     background-color: deepskyblue;
     color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.logout-button {
+    padding: 5px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: deepskyblue;
     border: none;
     border-radius: 5px;
 }
