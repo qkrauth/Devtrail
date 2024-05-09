@@ -2,6 +2,8 @@ import asyncHandler from 'express-async-handler';
 import User from '../models/userModel.js';
 import generateToken from '../utils/generateToken.js';
 
+// a controller function that authenticates a user, it checks provided email and password against the database and generates a token
+// upon successful authentication
 const authUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
@@ -21,6 +23,7 @@ const authUser = asyncHandler(async (req, res) => {
   }
 });
 
+// function for registering a new user, it checks if the credentials already exist and creates a new user if it wasnt found in the database
 const registerUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
@@ -46,6 +49,7 @@ const registerUser = asyncHandler(async (req, res) => {
   }
 });
 
+// logs out user by clearing the JWT cookie returns a success message
 const logoutUser = (req, res) => {
   res.cookie('jwt', '', {
     httpOnly: true,
@@ -54,7 +58,7 @@ const logoutUser = (req, res) => {
   res.status(200).json({ message: 'Logged out successfully' });
 };
 
-
+// function for retrieving user profile information, it finds the user by ID and returns their data
 const getUserProfile = asyncHandler(async (req, res) => {
   const user = await User.findById(req.user._id);
 

@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
 
+// define a mongoose schema for the user model, an email and a password
 const userSchema = mongoose.Schema(
   {
     email: {
