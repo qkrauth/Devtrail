@@ -7,6 +7,7 @@ import { useUser } from "../UserContext";
 const Header = () => {
   const { user, setUser } = useUser();
 
+  // access the users data as the component mounts
   useEffect(() => {
     const getProfileData = async () => {
       try {
