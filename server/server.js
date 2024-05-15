@@ -6,6 +6,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import userRoutes from './routes/userRoutes.js';
+import chatRoutes from './routes/chatRoutes.js';
 
 const port = process.env.PORT || 5000;
 
@@ -16,7 +17,8 @@ const corsOptions ={
   origin:process.env.FRONTEND_URL, 
   credentials:true,       
   optionSuccessStatus:200
-}
+};
+
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -24,6 +26,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 
 app.use('/api/auth', userRoutes);
+app.use('/api/chat', chatRoutes);
 
 app.get('/', (req, res) => {
     res.send('API is running!');
