@@ -47,7 +47,9 @@ const Header = () => {
         <p>Logo</p>
       </Link>
       <div className="nav-bar">
-        <p>ChatBot</p>
+      <Link to="/bot">
+        <p>Chatbot</p>
+      </Link>
         <p>Resources</p>
         <p>Services</p>
         <p>Products</p>

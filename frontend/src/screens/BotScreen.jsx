@@ -3,8 +3,8 @@ import Chatbot from "../components/Chatbot";
 
 const BotScreen = () => {
     return (
-        <div>
-            <p>BotScreen</p>
+        <div className="botscreen-container">
+            <p>Say hello to our *DevTrail ChatBot!*</p>
             <Chatbot />
         </div>
     );

@@ -29,7 +29,7 @@ const Chatbot = () => {
         {messages.map((msg, index) => (
           <div key={index} className={`message ${msg.role}`}>
             {msg.role === 'user' ? msg.content : typeof msg.content === 'string' ? msg.content : JSON.stringify(msg.content)}
-          </div>
+          </div> // api response comes back as a JSON object so stringify turns that into a string (had an error here initially)
         ))}
       </div>
       <div className="input-container">
