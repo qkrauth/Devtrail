@@ -264,7 +264,7 @@ button:hover {
   .message-container {
     padding: 10px;
     overflow-y: scroll;
-    max-height: 500px;
+    height: 500px;
   }
   
   .message {
@@ -276,7 +276,7 @@ button:hover {
   }
   
   .user {
-    background-color: rgb(120, 245, 245);
+    background-color: rgb(205, 250, 145);
     align-self: flex-end;
   }
   

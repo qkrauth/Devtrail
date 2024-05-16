@@ -4,7 +4,7 @@ import Chatbot from "../components/Chatbot";
 const BotScreen = () => {
     return (
         <div className="botscreen-container">
-            <p>Say hello to our *DevTrail ChatBot!*</p>
+            <h3>Say hello to our *DevTrail ChatBot!*</h3>
             <Chatbot />
         </div>
     );
