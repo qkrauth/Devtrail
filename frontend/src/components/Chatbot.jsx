@@ -6,18 +6,20 @@ const Chatbot = () => {
   const [input, setInput] = useState('');
 
   const sendMessage = async () => {
-    if (input.trim() === '') return;
+    if (input.trim() === '') return; // returns early if input is blank
 
+    // a message object representing the user and their input being the user content
     const userMessage = { role: 'user', content: input };
     setMessages([...messages, userMessage]);
 
     try {
+      // a post request is made to the URL sending the user input as the message
       const response = await axios.post('http://localhost:5000/api/chat', { message: input });
-      const botMessage = response.data.choices[0].message.content;
+      const botMessage = response.data.choices[0].message.content; // awaited response - bot reply is extracted from response.data.choices
 
       const newMessages = [...messages, userMessage, { role: 'bot', content: botMessage }];
-      setMessages(newMessages);
-      setInput('');
+      setMessages(newMessages); //setMessage function called to update the state of messages
+      setInput(''); // input field cleared
     } catch (error) {
       console.error('Error:', error);
     }
