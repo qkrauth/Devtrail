@@ -50,3 +50,28 @@
     font-size: 15px;
     color: lightseagreen;
 }
+
+@media (max-width: 600px) {
+    .intro-container {
+        width: 90%;
+    }
+
+    .intro-container h1 {
+        font-size: 50px;
+    }
+
+    .intro-container h2 {
+        font-size: 15px;
+    }
+
+    .intro-container h6 {
+        font-size: 12px;
+    }
+  }
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .intro-container {
+        width: 90%;
+        gap: 25px;
+    }
+}
