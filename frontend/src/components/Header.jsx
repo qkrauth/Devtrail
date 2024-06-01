@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <div className="header">
       <Link to="/">
-        <p>Logo</p>
+        <img src="https://target.scene7.com/is/image/Target/TargetTech-logo-RGB-211122-1637594740118?fmt=png-alpha" alt="Logo" className="logo" />
       </Link>
       <div className="nav-bar">
       <Link to="/bot">
