@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Register from "../components/Register";
 import Login from "../components/Login";
+import './AuthScreen.css';
 
 const AuthScreen = () => {
     const [isRegistering, setIsRegistering] = useState(false);

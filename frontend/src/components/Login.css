@@ -1,0 +1,34 @@
+.auth-form {
+    background-color: lightgray;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+}
+
+.auth-form form {
+    width: 300px;
+}
+
+.auth-form div {
+    margin-bottom: 15px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: deepskyblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}

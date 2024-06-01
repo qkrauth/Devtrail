@@ -1,5 +1,6 @@
 import React from "react";
 import Chatbot from "../components/Chatbot";
+import './BotScreen.css';
 
 const BotScreen = () => {
     return (

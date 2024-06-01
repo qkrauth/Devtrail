@@ -1,5 +1,6 @@
 import React from "react";
 import Intro from "../components/Intro";
+import './HomeScreen.css';
 
 const HomeScreen = () => {
     return (
