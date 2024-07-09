@@ -1,3 +1,6 @@
+// we define an Express route for handling POST requests to the root endpoint, when a request is received it takes the users message from
+// the req body and sends it to OpenAI to generate a chatgpt like response, the API reply is sent back to the client 
+
 import express from 'express';
 import axios from 'axios';
 

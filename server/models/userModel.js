@@ -1,3 +1,7 @@
+// Here I define a Mongoose schema for a User - email and passwords must be unique fields, the method matchPassword compares the entered
+// password witht he stored hashed password using bcrypt, before saving a User the 'pre save' middleware encrypts the password if it has
+// been modified
+
 import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
 

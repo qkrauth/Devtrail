@@ -1,3 +1,5 @@
+// Handling user related HTTP routes, import the controller functions for their specific purposes
+
 import express from 'express';
 import {
   authUser,

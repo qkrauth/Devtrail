@@ -1,3 +1,6 @@
+// Im using Mongoose to connect to a mongoDB database. connectDB attempts to connect using the URI from the env file, on success it logs
+// the connection host
+
 import mongoose from 'mongoose';
 
 const connectDB = async () => {

@@ -29,7 +29,7 @@ app.use('/api/auth', userRoutes);
 app.use('/api/chat', chatRoutes);
 
 app.get('/', (req, res) => {
-    res.send('API is running!');
+    res.send('up and running!');
   });
 
 app.listen(port, () => console.log(`Server started on port ${port}`));

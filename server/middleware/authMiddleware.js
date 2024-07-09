@@ -1,3 +1,6 @@
+// I am defining a middleware function called protect - used for protecting routes in my Express application. It gets a JWT token from
+// cookies and verifies it then attaches the user information (minus the password) to the request object. Invalid if JWT is missing
+
 import jwt from 'jsonwebtoken';
 import asyncHandler from 'express-async-handler';
 import User from '../models/userModel.js';
@@ -13,7 +16,7 @@ const protect = asyncHandler(async (req, res, next) => {
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
       req.user = await User.findById(decoded.userId).select('-password');
 
-      next(); // next function passes control to the next middleware function in the stack?
+      next(); // next function passes control to the next middleware function in the stack
     } catch (error) {
       console.error(error);
       res.status(401);
