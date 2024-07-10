@@ -6,13 +6,14 @@ import { toast } from 'react-toastify';
 import { useUser } from "../UserContext";
 
 const Login = () => {
-  const navigate = useNavigate();
-  const { setUser } = useUser();
+  const navigate = useNavigate(); // redirect users
+  const { setUser } = useUser(); // update user state
   const [formData, setFormData] = useState({
     email: "",
     password: "",
-  });
+  }); // manage form data
 
+  // update the state with new values
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -20,6 +21,7 @@ const Login = () => {
     });
   };
 
+  // sends login data to the back end to try and update the state of the submit
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
