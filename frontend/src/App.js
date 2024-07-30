@@ -9,6 +9,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { UserProvider } from "./UserContext";
 import BotScreen from "./screens/BotScreen";
+import ResourceScreen from "./screens/ResourceScreen";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<HomeScreen />} />
           <Route path="/auth" element={<AuthScreen />} />
           <Route path="/bot" element={<BotScreen />} />
+          <Route path="/resources" element={<ResourceScreen />} />
         </Routes>
         <Footer />
       </UserProvider>

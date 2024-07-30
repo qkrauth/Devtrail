@@ -51,7 +51,9 @@ const Header = () => {
       <Link to="/bot">
         <p>Chatbot</p>
       </Link>
+      <Link to="/resources">
         <p>Resources</p>
+      </Link>
         <p>Services</p>
         <p>Products</p>
         {user ?
