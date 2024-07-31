@@ -1,0 +1,12 @@
+.product-container {
+    background-color: lightgray;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+.product-container h1 {
+    font-size: 4rem;
+    color: black;
+    margin-top: 50px;
+}

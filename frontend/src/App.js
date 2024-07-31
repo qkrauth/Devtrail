@@ -10,6 +10,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import { UserProvider } from "./UserContext";
 import BotScreen from "./screens/BotScreen";
 import ResourceScreen from "./screens/ResourceScreen";
+import ServiceScreen from "./screens/ServiceScreen";
+import ProductScreen from "./screens/ProductScreen";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -20,8 +23,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/auth" element={<AuthScreen />} />
-          <Route path="/bot" element={<BotScreen />} />
-          <Route path="/resources" element={<ResourceScreen />} />
+          <Route path="/bot" element={<PrivateRoute element={<BotScreen />} />} />
+          <Route path="/resources" element={<PrivateRoute element={<ResourceScreen />} />} />
+          <Route path="/services" element={<PrivateRoute element={<ServiceScreen />} />} />
+          <Route path="/products" element={<PrivateRoute element={<ProductScreen />} />} />
         </Routes>
         <Footer />
       </UserProvider>

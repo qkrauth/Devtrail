@@ -54,8 +54,12 @@ const Header = () => {
       <Link to="/resources">
         <p>Resources</p>
       </Link>
+      <Link to="/services">
         <p>Services</p>
+      </Link>
+      <Link to="/products">
         <p>Products</p>
+      </Link>
         {user ?
           <button className='logout-button' onClick={handleLogout}>Logout</button>
           :
