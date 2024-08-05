@@ -1,4 +1,5 @@
 import React from "react";
+import Checkout from "../components/Checkout";
 import './ServiceScreen.css';
 
 const ServiceScreen = () => {
@@ -18,11 +19,11 @@ const ServiceScreen = () => {
                 <div className="service-buttons">
                     <div className="service-button">
                         <p>Resume Review</p>
-                        <button>$4.99</button>
+                        <Checkout amount={499} />
                     </div>
                     <div className="service-button">
                         <p>Career Consulting</p>
-                        <button>$4.99</button>
+                        <Checkout amount={499} />
                     </div>
                 </div>
             </div>
@@ -34,11 +35,11 @@ const ServiceScreen = () => {
                 <div className="service-buttons">
                     <div className="service-button">
                         <p>Resume Review</p>
-                        <button>$4.99</button>
+                        <Checkout amount={499} />
                     </div>
                     <div className="service-button">
                         <p>Career Consulting</p>
-                        <button>$4.99</button>
+                        <Checkout amount={499} />
                     </div>
                 </div>
             </div>
@@ -50,11 +51,11 @@ const ServiceScreen = () => {
                 <div className="service-buttons">
                     <div className="service-button">
                         <p>Resume Review</p>
-                        <button>$4.99</button>
+                        <Checkout amount={499} />
                     </div>
                     <div className="service-button">
                         <p>Career Consulting</p>
-                        <button>$4.99</button>
+                        <Checkout amount={499} />
                     </div>
                 </div>
             </div>
@@ -66,11 +67,11 @@ const ServiceScreen = () => {
                 <div className="service-buttons">
                     <div className="service-button">
                         <p>Resume Review</p>
-                        <button>$4.99</button>
+                        <Checkout amount={499} />
                     </div>
                     <div className="service-button">
                         <p>Career Consulting</p>
-                        <button>$4.99</button>
+                        <Checkout amount={499} />
                     </div>
                 </div>
             </div>
@@ -82,11 +83,11 @@ const ServiceScreen = () => {
                 <div className="service-buttons">
                     <div className="service-button">
                         <p>Resume Review</p>
-                        <button>$4.99</button>
+                        <Checkout amount={499} />
                     </div>
                     <div className="service-button">
                         <p>Career Consulting</p>
-                        <button>$4.99</button>
+                        <Checkout amount={499} />
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ const Chatbot = () => {
 
     try {
       // a post request is made to the URL sending the user input as the message
-      const response = await axios.post('http://localhost:5000/api/chat', { message: input });
+      const response = await axios.post(`${process.env.REACT_APP_API_KEY}/chat`, { message: input });
       const botMessage = response.data.choices[0].message.content; // awaited response - bot reply is extracted from response.data.choices
 
       const newMessages = [...messages, userMessage, { role: 'bot', content: botMessage }];

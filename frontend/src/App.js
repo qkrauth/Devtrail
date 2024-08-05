@@ -13,6 +13,8 @@ import ResourceScreen from "./screens/ResourceScreen";
 import ServiceScreen from "./screens/ServiceScreen";
 import ProductScreen from "./screens/ProductScreen";
 import PrivateRoute from "./components/PrivateRoute";
+import CancelScreen from "./screens/CancelScreen";
+import ConfirmScreen from "./screens/ConfirmScreen";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path="/resources" element={<PrivateRoute element={<ResourceScreen />} />} />
           <Route path="/services" element={<PrivateRoute element={<ServiceScreen />} />} />
           <Route path="/products" element={<PrivateRoute element={<ProductScreen />} />} />
+          <Route path="/cancel" element={<CancelScreen />} />
+          <Route path="/success" element={<ConfirmScreen />} />
         </Routes>
         <Footer />
       </UserProvider>
