@@ -11,7 +11,9 @@ const Intro = () => {
                 we're more than a startup – we're your compass, guiding you through the trails of technology, transforming dreams into thriving careers.
                 <span> Your new career adventure begins here at DevTrail</span> – Trailblazing Your Tech Future!</h6>
             </div>
-            <button className="intro-button">Learn More</button>
+            <a href="#home-section-2">
+                <button className="intro-button">Learn More</button>
+            </a>
         </div>
     );
 };
