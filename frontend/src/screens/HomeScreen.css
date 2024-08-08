@@ -1,5 +1,5 @@
 .homescreen-container {
-  min-height: 5000px;
+  min-height: 1000px;
   width: 100%;
 }
 
@@ -97,11 +97,39 @@
   background-color: lightgray;
   padding: 3%;
   display: flex;
+  flex-direction: row;
   border: 3px solid black;
 }
 
 .section-2-left {
   flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+.section-2-left h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.founder-img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 4px solid darkgray;
+}
+
+.section-2-left p {
+  font-size: 20px;
+  line-height: 2.0;
+  color: #555; /* Medium gray text for a softer look */
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .section-2-right {
@@ -141,6 +169,14 @@
   width: 100px;
 }
 
+.home-section-3 {
+  min-height: 800px;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  border: 3px solid deepskyblue;
+}
+
 @media (max-width: 600px) {
   .home-section-1 {
     height: auto;
@@ -164,6 +200,18 @@
   }
 
   .home-section-1 img {
+    margin-bottom: 20px;
+  }
+
+  .home-section-2 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .section-2-left,
+  .section-2-right {
+    width: 100%;
     margin-bottom: 20px;
   }
 }

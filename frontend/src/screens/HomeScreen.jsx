@@ -14,7 +14,9 @@ const HomeScreen = () => {
             </div>
             <div className="home-section-2" id="home-section-2">
                 <div className="section-2-left">
-                    <p>test</p>
+                    <h1>A Word from our Founder</h1>
+                    <img src="https://cdn4.iconfinder.com/data/icons/cute-minimal-geometric-cartoon-avatars/100/d-512.png" alt="Founder" className="founder-img" />
+                        <p>Hi, my name is Quinten and I am a current Master's student trying to make my way into big tech. My journey, like many of yours, has not been linear. I went from a business student to an attempted self-taught engineer to a bootcamp grad and finally grad student. With an abundance of information on the web about how to get your career started in tech, allow DevTrail to help narrow your view. My goal is to share my experiences and resources with you all so you dont make the same mistakes I made.</p>
                 </div>
                 <div className="section-2-right">
                     <div className="welcome">
@@ -24,6 +26,10 @@ const HomeScreen = () => {
                         <img src="https://i.pinimg.com/originals/bb/33/d2/bb33d202ff2a99c99aa40484474ae51a.png" alt="" />
                     </div>
                 </div>
+            </div>
+            <div className="home-section-3">
+                <div className="section-3-left"></div>
+                <div className="section-3-right"></div>
             </div>
         </div>
     );

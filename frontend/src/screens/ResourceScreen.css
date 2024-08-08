@@ -74,3 +74,23 @@
     margin: 5px;
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .video iframe {
+        width: 95%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .passage {
+        width: 90%;
+    }
+
+    .article {
+        font-size: 1em;
+    }
+
+    .creator-list li {
+        margin: 10px 0;
+    }
+}
