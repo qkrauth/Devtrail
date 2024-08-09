@@ -17,6 +17,9 @@ const HomeScreen = () => {
                     <h1>A Word from our Founder</h1>
                     <img src="https://cdn4.iconfinder.com/data/icons/cute-minimal-geometric-cartoon-avatars/100/d-512.png" alt="Founder" className="founder-img" />
                         <p>Hi, my name is Quinten and I am a current Master's student trying to make my way into big tech. My journey, like many of yours, has not been linear. I went from a business student to an attempted self-taught engineer to a bootcamp grad and finally grad student. With an abundance of information on the web about how to get your career started in tech, allow DevTrail to help narrow your view. My goal is to share my experiences and resources with you all so you dont make the same mistakes I made.</p>
+                        <p>
+                            Contact me <a href="https://www.linkedin.com/in/quintenkrauth/" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline', color: 'blue' }}>HERE</a>
+                        </p>
                 </div>
                 <div className="section-2-right">
                     <div className="welcome">
@@ -28,8 +31,41 @@ const HomeScreen = () => {
                 </div>
             </div>
             <div className="home-section-3">
-                <div className="section-3-left"></div>
-                <div className="section-3-right"></div>
+                <div className="section-3-left">
+                    <div className="benefits">
+                        <h1>Member Benefits</h1>
+                        <img src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_man_boy_male_profile_smiley_happy_people_icon_181658.png" alt="" />
+                        <p>
+                            <img src="https://static.vecteezy.com/system/resources/previews/011/911/711/non_2x/check-mark-button-free-png.png" alt="" />
+                            Full access to all features of the DevTrail app
+                        </p>
+                        <p>
+                            <img src="https://static.vecteezy.com/system/resources/previews/011/911/711/non_2x/check-mark-button-free-png.png" alt="" />
+                            Interact with our DevTrail AI chatbot
+                        </p>
+                        <p>
+                            <img src="https://static.vecteezy.com/system/resources/previews/011/911/711/non_2x/check-mark-button-free-png.png" alt="" />
+                            Purchase services from our industry professionals
+                        </p>
+                        <p>
+                            <img src="https://static.vecteezy.com/system/resources/previews/011/911/711/non_2x/check-mark-button-free-png.png" alt="" />
+                            View our products (coming soon)
+                        </p>
+                        <p>
+                            <img src="https://static.vecteezy.com/system/resources/previews/011/911/711/non_2x/check-mark-button-free-png.png" alt="" />
+                            Engage in the community forum? (Accepting feedback)
+                        </p>
+                    </div>
+                </div>
+                <div className="section-3-right">
+                    <h1>Support us</h1>
+                    <p>DevTrail greatly appreciates all donations</p>
+                    <a href="https://buymeacoffee.com/devtrail" target="_blank" rel="noopener noreferrer">
+                        <button className="donate-button">Donate</button>
+                    </a>
+                    <p className="powered-by">powered by BuyMeACoffee</p>
+                    <img src="https://static.vecteezy.com/system/resources/previews/010/056/310/original/coffee-icon-sign-symbol-design-free-png.png" alt="Coffee cup" className="coffee-cup" />
+                </div>
             </div>
         </div>
     );

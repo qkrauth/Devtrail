@@ -127,7 +127,7 @@
 .section-2-left p {
   font-size: 20px;
   line-height: 2.0;
-  color: #555; /* Medium gray text for a softer look */
+  color: #555;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -177,6 +177,90 @@
   border: 3px solid deepskyblue;
 }
 
+.section-3-left {
+    flex: 1;
+    padding: 3%;
+}
+
+.benefits {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: 3px solid deepskyblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.benefits h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.benefits img {
+    width: 150px;
+    height: auto;
+}
+
+.benefits p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.benefits p img {
+    width: 20px;
+    height: auto;
+}
+
+.section-3-right {
+  flex: 1;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.section-3-right h1 {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.section-3-right p {
+  margin-bottom: 15px;
+}
+
+.donate-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.donate-button:hover {
+  background-color: gray;
+}
+
+.powered-by {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.coffee-cup {
+  width: 100px;
+  height: auto;
+}
+
 @media (max-width: 600px) {
   .home-section-1 {
     height: auto;
@@ -213,6 +297,19 @@
   .section-2-right {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .home-section-3 {
+    flex-direction: column;
+  }
+
+  .section-3-left, .section-3-right {
+      width: 100%;
+      text-align: center;
+  }
+
+  .section-3-left {
+      margin-bottom: 20px;
   }
 }
 
