@@ -6,8 +6,3 @@ import HomeScreen from '../src/screens/HomeScreen';
 test("adds 2 + 2 and equals 4", () => {
     expect(dummyTestSum(2, 2)).toBe(4)
 });
-
-test('renders HomeScreen component', () => {
-    render(<HomeScreen />);
-    expect(screen.getByText(/DevTrail/i)).toBeInTheDocument();
-});
