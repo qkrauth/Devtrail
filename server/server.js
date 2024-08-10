@@ -1,3 +1,6 @@
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
@@ -33,23 +36,6 @@ app.use(bodyParser.json());
 app.use('/api/auth', userRoutes);
 app.use('/api/chat', chatRoutes);
 
-// app.post('/makepayment', async (req, res) => {
-//   const { amount } = req.body; // payment amount from req.body
-
-//   try {
-//     const paymentIntent = await stripe.paymentIntents.create({
-//       amount,
-//       currency: 'usd',
-//     }); //creates payment intent with USD using Stripe API
-
-//     res.send({
-//       clientSecret: paymentIntent.client_secret,
-//     });
-
-//   } catch (error) {
-//     res.status(500).send({ error: error.message });
-//   }
-// });
 
 app.post('/api/checkout', async (req, res) => {
   try {
@@ -62,7 +48,7 @@ app.post('/api/checkout', async (req, res) => {
             product_data: {
               name: 'DevTrail Service',
             },
-            unit_amount: 499, // Amount in cents
+            unit_amount: 499,
           },
           quantity: 1,
         },
@@ -84,6 +70,15 @@ app.get('/', (req, res) => {
 
 app.get('/', (req, res) => {
     res.send('up and running!');
-  });
+});
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, '../frontend/build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
+});
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
