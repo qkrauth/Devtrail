@@ -1,10 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-// import HomeScreen from '../src/screens/HomeScreen';
 import Intro from '../src/components/Intro';
 import dummyTestSum from '../tests/testModule';
-
-// const dummyTestSum = require('./testModule');
 
 test("adds 2 + 2 and equals 4", () => {
     expect(dummyTestSum(2, 2)).toBe(4);
