@@ -1,7 +1,9 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import Intro from '../src/components/Intro';
+import { render, screen, fireEvent } from '@testing-library/react';
+
 import dummyTestSum from '../tests/testModule';
+import Intro from '../src/components/Intro';
+import Checkout from '../src/components/Checkout';
 
 // initial dummy test
 test("adds 2 + 2 and equals 4", () => {
@@ -16,4 +18,14 @@ test("renders the Intro component on the main screen", () => {
     const word = screen.getByText(/Trailblazing/i);
 
     expect(word).toBeInTheDocument();
+});
+
+// test to see if the button has its intended functionality
+test("simulates a click of a button", () => {
+    render(<Checkout amount={499} />);
+
+    const button = screen.getByRole('link'); // the role of the button is 'link'
+    expect(button).toBeInTheDocument();
+
+    fireEvent.click(button);
 });
