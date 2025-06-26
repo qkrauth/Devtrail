@@ -29,3 +29,16 @@ test("simulates a click of a button", () => {
 
     fireEvent.click(button);
 });
+
+// test("updates input values in Login form", () => {
+//     render(<Login />);
+
+//     const emailInput = screen.getByLabelText(/email/i);
+//     const passwordInput = screen.getByLabelText(/password/i);
+
+//     fireEvent.change(emailInput, { target: { value: 'test@example.com' } });
+//     fireEvent.change(passwordInput, { target: { value: 'password123' } });
+
+//     expect(emailInput.value).toBe('test@example.com');
+//     expect(passwordInput.value).toBe('password123');
+// });
